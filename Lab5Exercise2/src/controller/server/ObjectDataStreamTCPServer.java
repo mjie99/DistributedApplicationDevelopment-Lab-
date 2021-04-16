@@ -51,7 +51,7 @@ public class ObjectDataStreamTCPServer {
 				ObjectOutputStream objectOS = new ObjectOutputStream(socket.getOutputStream());
 				
 				objectOS.writeObject(item);
-				//objectOS.flush();
+				
 				
 				// Send validation result
 				objectOS.writeObject(result);
