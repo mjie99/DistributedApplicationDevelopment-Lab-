@@ -40,8 +40,7 @@ public class ObjectDataStreamTCPClient {
 			objectOS.flush();
 			
 			// Open stream to receive object
-			ObjectInputStream objectIS = new ObjectInputStream(new BufferedInputStream(socket.getInputStream()));
-			
+			ObjectInputStream objectIS = new ObjectInputStream(socket.getInputStream());
 			
 			// Get object from stream and display details
 			item = (ItemProduct) objectIS.readObject();

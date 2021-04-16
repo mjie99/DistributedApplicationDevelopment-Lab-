@@ -48,10 +48,10 @@ public class ObjectDataStreamTCPServer {
 				item.setItemProductId(++itemProductId);
 				
 				// Create output stream to send object
-				ObjectOutputStream objectOS = new ObjectOutputStream(new BufferedOutputStream(socket.getOutputStream()));
+				ObjectOutputStream objectOS = new ObjectOutputStream(socket.getOutputStream());
 				
 				objectOS.writeObject(item);
-				objectOS.flush();
+				//objectOS.flush();
 				
 				// Send validation result
 				objectOS.writeObject(result);
