@@ -15,6 +15,7 @@ public class UDPCountWordServerApp {
 		int bufferSize = 1024;
 		
 		try {
+			
 			// Instantiate a new DatagramSocket to receive responses from the client
 			DatagramSocket serverSocket = new DatagramSocket (serverPort);
 			
